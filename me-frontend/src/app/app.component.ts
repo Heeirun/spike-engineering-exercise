@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ConfigService,UserData } from './config.service';
+import { ConfigService } from './config.service';
 
 @Component({
   selector: 'app-root',
@@ -11,16 +11,6 @@ export class AppComponent {
   title = 'me-frontend';
   public output : string;
   // public configService : ConfigService;
-  public resData : UserData;
 
-  constructor(private configService: ConfigService) { }
-
-  getData(){
-    return this.configService.getBackEndTest().subscribe(
-      res => {
-        this.resData = res
-        console.log(this.resData);
-      }
-    );
-  }
+  constructor() { }
 }

@@ -5,13 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule} from '@angular/material/card';
-import {MatFormFieldModule, MatInputModule, MatButtonModule, MatDividerModule} from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatButtonModule, MatDividerModule, MatCardModule} from '@angular/material';
+import { SignupComponent } from './signup/signup.component';
+import { MainComponent } from './main/main.component';
+import { LoginComponent } from './login/login.component';
+import {FormsModule} from '@angular/forms';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignupComponent,
+    MainComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +28,8 @@ import {MatFormFieldModule, MatInputModule, MatButtonModule, MatDividerModule} f
     MatCardModule,
     MatInputModule,
     MatButtonModule,
-    MatDividerModule
+    MatDividerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

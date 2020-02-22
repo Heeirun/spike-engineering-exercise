@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.example.demo.User" table = "userInfo">
+      
+      <meta attribute = "class-description">
+         This class contains the user information.
+      </meta>
+      
+      <id name = "id" type = "int" column = "id">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "aboutMe" column = "about_me" type = "string"/>
+      <property name = "myClasses" column = "my_classes" type = "string"/>
+      <property name = "futureGoals" column = "future_goals" type = "string"/>
+      <property name = "funStuff" column = "fun_stuff" type = "string"/>
+      <property name = "otherStuff" column = "other_stuff" type = "string"/>
+      <property name = "interestingLinks" column = "interesting_links" type = "string"/>
+      <property name = "username" column = "username" type = "string"/>
+      <property name = "password" column = "password" type = "string"/>
+      
+   </class>
+</hibernate-mapping>

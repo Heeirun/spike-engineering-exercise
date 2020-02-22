@@ -1,0 +1,57 @@
+<div class="toolbar" role="banner">
+    <div class="spacer"></div>
+    <span>All About Me</span>
+    <div class="spacer"></div>    
+</div>
+
+<div class="content" role="main">
+    <div class="card-container">
+        <mat-card>
+            <mat-card-title>Create a New Account</mat-card-title>
+            <mat-card-subtitle>It is as easy as 1,2,3.</mat-card-subtitle>
+            <mat-form-field class="fields" appearance="fill">
+                <mat-label>Username</mat-label>
+                <input [(ngModel)]="username" matInput>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="fields" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input [(ngModel)]="password" matInput>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="fields" appearance="fill">
+                <mat-label>About Me </mat-label>
+                <textarea [(ngModel)]="aboutMe" matInput></textarea>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="fields" appearance="fill">
+                <mat-label>My Classes </mat-label>
+                <textarea [(ngModel)]="myClasses" matInput></textarea>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="fields" appearance="fill">
+                <mat-label>Future Goals</mat-label>
+                <textarea [(ngModel)]="futureGoals" matInput></textarea>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="fields" appearance="fill">
+                <mat-label>Fun Stuff</mat-label>
+                <textarea [(ngModel)]="funStuff" matInput></textarea>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="fields" appearance="fill">
+                <mat-label>Other Stuff</mat-label>
+                <textarea [(ngModel)]="otherStuff" matInput></textarea>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="fields" appearance="fill">
+                <mat-label>Interesting Links</mat-label>
+                <textarea [(ngModel)]="interestingLinks" matInput></textarea>
+              </mat-form-field>
+              <br>
+              <div class ="but">
+                <button mat-raised-button (click)="createAccount()" routerLink="/mainPage">Create New Account</button>
+              </div>
+        </mat-card>
+    </div>
+</div>

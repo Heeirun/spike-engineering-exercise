@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.spike;
 
 public class User {
     
@@ -13,8 +13,9 @@ public class User {
     private String password;
 
     public User(int id, String aboutMe, String myClasses, String futureGoals, String funStuff, String otherStuff, String interestingLinks, String username, String password) {
-        this.aboutMe = aboutMe;
+        
         this.id = id;
+        this.aboutMe = aboutMe;
         this.myClasses = myClasses;
         this.futureGoals = futureGoals;
         this.funStuff = funStuff;

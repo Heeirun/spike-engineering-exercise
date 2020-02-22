@@ -1,0 +1,38 @@
+<div class="toolbar" role="banner">
+    <div class="spacer"></div>
+    <span>All About Me</span>
+    <div class="spacer"></div>    
+</div>
+  
+  <div class="content" role="main">
+  
+    <div class="card-container">
+      <mat-card>
+        <mat-card-title>Login to <strong>All About Me</strong></mat-card-title>
+        <mat-card-content>
+            <mat-form-field class="fields" appearance="fill">
+              <mat-label>Username</mat-label>
+              <input [(ngModel)]="username" matInput>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="fields" appearance="fill">
+              <mat-label>Password</mat-label>
+              <input [(ngModel)]="password" matInput>
+            </mat-form-field>
+            <br>
+            <div class ="but">
+              <button mat-raised-button (click)="getCredentials()" routerLink="mainPage">Login</button>
+            </div>
+            <div class="divider">
+              <mat-divider></mat-divider>
+            </div>
+            <div class="but-signup">
+              <span ><strong>New here?</strong></span>
+            </div>
+            <div class ="but-signup">
+              <button mat-raised-button routerLink="signup">Create New Account</button>
+            </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>

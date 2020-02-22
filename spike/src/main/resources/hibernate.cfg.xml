@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name = "hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name = "hibernate.connection.url">jdbc:mysql://104.198.43.166/users</property>
+		<property name = "hibernate.connection.username">root</property>
+		<property name = "hibernate.connection.password">idea1234</property>
+		<!--<property name = "hibernate.agroal.maxSize">100</property>-->
+
+		<property name="connection.autoReconnect">true</property>
+		<property name="connection.autoReconnectForPools">true</property>
+		<property name="connection.is-connection-validation-required">true</property>
+        <property name="show_sql">true</property>
+
+
+		<!-- List of XML mapping files -->
+		<mapping resource = "User.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>
